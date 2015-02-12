@@ -46,7 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="HL7LoaderMessageViewer.feature.cs">
       <DependentUpon>HL7LoaderMessageViewer.feature</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -61,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="example-gen-doc.cmd" />
     <None Include="HL7LoaderMessageViewer.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>HL7LoaderMessageViewer.feature.cs</LastGenOutput>

@@ -11,7 +11,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace HL7v2Specs
+namespace HL7LoaderSpecs
 {
     using TechTalk.SpecFlow;
     
@@ -65,73 +65,6 @@ And I want the system to automatically detect the format of the message and sele
         public virtual void ScenarioCleanup()
         {
             testRunner.CollectScenarioErrors();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Displaying an HL7v2 message")]
-        public virtual void DisplayingAnHL7V2Message()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Displaying an HL7v2 message", ((string[])(null)));
-#line 7
-this.ScenarioSetup(scenarioInfo);
-#line 8
-  testRunner.Given("I am logged in as \"InterfaceManager\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
-  testRunner.And("I load messages from hl7v2-test-messages.hl7", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 10
-  testRunner.When("first loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 11
-  testRunner.Then("The first message should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 12
-  testRunner.And("The ViewerMode radio buttons should be set to HL7v2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Displaying an HL7v3 message")]
-        public virtual void DisplayingAnHL7V3Message()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Displaying an HL7v3 message", ((string[])(null)));
-#line 14
-this.ScenarioSetup(scenarioInfo);
-#line 15
-  testRunner.Given("I am logged in as \"InterfaceManager\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 16
-  testRunner.And("I load messages from hl7v3-test-messages.hl7", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 17
-  testRunner.And("My default CDA is test.xsl", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 18
-  testRunner.When("first loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 19
-  testRunner.Then("The first message should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 20
-  testRunner.And("The ViewerMode radio buttons should be set to HL7v3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 21
-  testRunner.And("a web browser should display the hl7 message according with test.xsl", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Autodetect the viewer mode when switching between messages")]
-        public virtual void AutodetectTheViewerModeWhenSwitchingBetweenMessages()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Autodetect the viewer mode when switching between messages", ((string[])(null)));
-#line 23
-this.ScenarioSetup(scenarioInfo);
-#line 24
-  testRunner.Given("I am logged in as \"InterfaceManager\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 25
-  testRunner.And("I load messages from hl7mixed-test-messages.hl7", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 26
-  testRunner.When("I select an HL7v3 message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 27
-  testRunner.And("I select an HL7v2 message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 28
-  testRunner.And("The ViewerMode radio buttons should be set to HL7v2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
         }
     }
 }
